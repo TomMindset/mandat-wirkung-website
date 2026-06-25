@@ -1,0 +1,127 @@
+---
+import Button from "@components/Button.astro";
+import CardGrid from "@components/CardGrid.astro";
+import ContentSection from "@components/ContentSection.astro";
+import CTASection from "@components/CTASection.astro";
+import Hero from "@components/Hero.astro";
+import OfferCard from "@components/OfferCard.astro";
+import Layout from "@layouts/Layout.astro";
+import { offers } from "@data/offers";
+import { landingNavigation } from "@data/navigation";
+import { site } from "@data/site";
+
+const statements = [
+  { title: "Verantwortung ohne vollständige Entscheidungsmacht", text: "Sie tragen Verantwortung, können aber nicht alles entscheiden." },
+  { title: "Einfluss ohne direkte Weisungsmacht", text: "Sie müssen Stakeholder gewinnen, ohne direkte Weisungsmacht zu haben." },
+  { title: "Mehr politische Rolle", text: "Sie sind fachlich stark, aber Ihre Rolle wird politischer." },
+  { title: "Veränderung vor Bereitschaft", text: "Sie sollen Veränderung treiben, obwohl die Organisation noch nicht bereit ist." },
+  { title: "Kritische Sichtbarkeit", text: "Sie brauchen Klarheit, bevor Sie in kritischen Terminen sichtbar werden." }
+];
+
+const audiences = [
+  { title: "Neue Führungsrolle", text: "Vom Experten zur Führungskraft. Mehr Sichtbarkeit, mehr Erwartung, weniger Eindeutigkeit." },
+  { title: "Laterale Führung", text: "Verantwortung übernehmen, ohne formale Macht zu haben." },
+  { title: "Transformation & Digitalisierung", text: "Veränderung führen, wenn Fachbereiche, IT, Management und Teams unterschiedliche Sprachen sprechen." },
+  { title: "Data, KI & Marketing", text: "Komplexe Themen anschlussfähig machen, ohne sich in Fachlichkeit zu verlieren." }
+];
+
+const topics = [
+  "Rollenklärung",
+  "Führungsmandat",
+  "Stakeholder-Wirkung",
+  "Kommunikation nach oben, zur Seite und ins Team",
+  "laterale Führung",
+  "Entscheidungssicherheit",
+  "Umgang mit Widerstand",
+  "Selbstführung unter Druck",
+  "Grenzen, Prioritäten und Sichtbarkeit",
+  "Vorbereitung kritischer Gespräche und Termine"
+];
+
+const formats = [
+  "1:1 online oder vor Ort",
+  "60 oder 90 Minuten",
+  "vertraulicher Rahmen",
+  "konkrete Anliegen statt Standardprogramm",
+  "optional als Paket über 3, 6 oder 10 Sessions",
+  "bei Bedarf Akutsparring vor wichtigen Terminen"
+];
+---
+
+<Layout title={site.defaultTitle} description={site.defaultDescription}>
+  <main id="inhalt">
+    <Hero
+      eyebrow={site.claim}
+      title="Klar führen, wenn Rolle, Erwartungen und Mandat nicht eindeutig sind."
+      text="Vertrauliches Führungsmandat Coaching für Führungskräfte und Schlüsselpersonen, die Veränderung verantworten, besonders in digitalen, datengetriebenen und KI-nahen Organisationen."
+      secondaryHref="/anlaesse"
+      secondaryLabel="Typische Coaching-Anlässe ansehen"
+    />
+
+    <ContentSection
+      title="Wenn Verantwortung größer ist als das Mandat"
+      text="Viele Führungskräfte sollen Veränderung voranbringen, ohne dass Rolle, Macht, Erwartungen und Rückendeckung wirklich geklärt sind. Sie bewegen sich zwischen Geschäftsführung, Fachbereichen, Teams, IT, Daten, Digitalisierung und politischen Dynamiken. Genau dort entsteht der Bedarf nach vertraulichem Sparring."
+    >
+      <CardGrid items={statements} columns="three" />
+    </ContentSection>
+
+    <ContentSection title="Für Menschen mit Veränderungsmandat" tone="grid">
+      <CardGrid items={audiences} columns="four" />
+    </ContentSection>
+
+    <ContentSection
+      title="Woran wir arbeiten"
+      text="Die Themen sind konkret, vertraulich und unmittelbar an Ihre Führungsrealität gebunden."
+    >
+      <div class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        {topics.map((topic) => <p class="border border-graphite/12 bg-white px-4 py-4 text-sm font-semibold text-slategraph shadow-quiet">{topic}</p>)}
+      </div>
+    </ContentSection>
+
+    <ContentSection
+      title="Vertraulich. Präzise. Auf Augenhöhe."
+      text="Coaching bei Mandat & Wirkung ist kein Training und keine Beratung. Es ist ein strukturierter Reflexionsraum für konkrete Führungs- und Rollensituationen. Wir arbeiten an realen Situationen, Entscheidungen, Gesprächen und inneren Spannungen, mit klarem Blick auf Organisation, Macht, Kommunikation und Wirkung."
+      tone="dark"
+    >
+      <div class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {formats.map((format) => <p class="border border-white/12 bg-white/6 px-5 py-4 text-sm font-semibold text-paper/82">{format}</p>)}
+      </div>
+    </ContentSection>
+
+    <section class="bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <div class="max-w-3xl">
+          <p class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Angebote</p>
+          <h2 class="text-balance text-3xl font-semibold leading-tight text-graphite sm:text-4xl">Vier klare Coaching-Rahmen</h2>
+          <p class="mt-6 text-lg leading-8 text-slategraph">Die Formate geben Struktur, bleiben aber am konkreten Anliegen ausgerichtet.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {offers.map((offer) => <OfferCard {...offer} />)}
+        </div>
+      </div>
+    </section>
+
+    <ContentSection
+      title="Erfahrung aus Führung, Daten, Marketing und Transformation"
+      text="Hinter Mandat & Wirkung steht langjährige Erfahrung in Führungs-, Daten-, Marketing-, Vertriebs- und Transformationskontexten. Der Schwerpunkt liegt auf der Frage, wie Menschen in komplexen Organisationen wirksam bleiben, wenn fachliche Logik, politische Dynamik und persönliche Verantwortung aufeinandertreffen."
+      tone="grid"
+    >
+      <p class="mt-7 max-w-3xl text-lg leading-8 text-slategraph">Die persönliche Vorstellung erfolgt im vertraulichen Orientierungsgespräch.</p>
+      <Button href="/ueber" variant="secondary" class="mt-8">Mehr über Mandat & Wirkung</Button>
+    </ContentSection>
+
+    <section class="bg-paper py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-2xl font-semibold text-graphite">Fokusthemen</h2>
+        <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {landingNavigation.map((item) => <a class="border border-graphite/12 bg-white px-5 py-4 text-sm font-semibold text-slategraph shadow-quiet hover:text-petrol" href={item.href}>{item.label}</a>)}
+        </div>
+      </div>
+    </section>
+
+    <CTASection
+      title="Sie stehen vor einer Führungsfrage, die intern schwer zu sortieren ist?"
+      text="Dann ist ein vertrauliches Orientierungsgespräch der richtige erste Schritt."
+    />
+  </main>
+</Layout>

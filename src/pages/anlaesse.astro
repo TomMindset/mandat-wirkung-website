@@ -1,0 +1,38 @@
+---
+import Button from "@components/Button.astro";
+import CardGrid from "@components/CardGrid.astro";
+import ContentSection from "@components/ContentSection.astro";
+import CTASection from "@components/CTASection.astro";
+import Layout from "@layouts/Layout.astro";
+
+const occasions = [
+  { title: "Neue Rolle", text: "Sie übernehmen mehr Verantwortung, aber Auftrag, Rückendeckung und Erwartungen sind noch nicht sauber ausgesprochen." },
+  { title: "Laterale Verantwortung", text: "Sie sollen Ergebnisse ermöglichen, ohne formale Weisungsbefugnis gegenüber allen Beteiligten zu haben." },
+  { title: "Transformation", text: "Sie stehen zwischen Management, Fachbereichen, Teams und operativer Realität." },
+  { title: "Daten, Digitalisierung oder KI", text: "Sie müssen komplexe Themen anschlussfähig machen, ohne sich in Fachlichkeit zu verlieren." },
+  { title: "Kritische Gespräche", text: "Sie brauchen Klarheit für einen Termin, in dem Rolle, Entscheidung oder Konflikt sichtbar werden." },
+  { title: "Hoher Druck", text: "Sie wollen Prioritäten, Grenzen und eigene Wirkung sortieren, bevor der Druck weiter steigt." }
+];
+---
+
+<Layout
+  title="Anlässe für Führungsmandat Coaching | Mandat & Wirkung"
+  description="Typische Anlässe für vertrauliches Führungsmandat Coaching: Rollenklärung, laterale Führung, Transformation, Stakeholder und kritische Gespräche."
+>
+  <main id="inhalt">
+    <section class="surface-grid bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Anlässe</p>
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Wenn Führung intern schwer zu sortieren ist</h1>
+        <p class="mt-7 text-lg leading-8 text-slategraph">
+          Coaching wird relevant, wenn Verantwortung, Mandat und Wirkung nicht mehr eindeutig zusammenpassen. Mandat & Wirkung bietet dafür einen vertraulichen Reflexionsraum.
+        </p>
+        <Button href="/kontakt" class="mt-9">Orientierungsgespräch anfragen</Button>
+      </div>
+    </section>
+    <ContentSection title="Typische Coaching-Anlässe">
+      <CardGrid items={occasions} columns="three" />
+    </ContentSection>
+    <CTASection title="Ein Anlass muss noch keine Lösung haben." text="Es reicht, wenn die Situation bedeutsam ist und intern schwer neutral zu klären bleibt." />
+  </main>
+</Layout>

@@ -1,0 +1,79 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { site } from "@data/site";
+---
+
+<Layout
+  title="Impressum | Mandat & Wirkung"
+  description="Impressum von Mandat & Wirkung, Führungsmandat Coaching von Thomas Hoffmann."
+>
+  <main id="inhalt">
+    <section class="bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Rechtliches</p>
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Impressum</h1>
+
+        <div class="mt-10 space-y-10 border border-graphite/12 bg-white p-6 leading-8 text-slategraph shadow-quiet sm:p-8">
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Angaben gemäß § 5 DDG</h2>
+            <p class="mt-4">
+              Thomas Hoffmann<br />
+              Mandat & Wirkung<br />
+              Bahnhofstraße 75<br />
+              71332 Waiblingen<br />
+              Deutschland
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Kontakt</h2>
+            <p class="mt-4">E-Mail: <a class="font-semibold text-petrol hover:text-ink" href={`mailto:${site.email}`}>{site.email}</a></p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Verantwortlich für den Inhalt</h2>
+            <p class="mt-4">
+              Thomas Hoffmann<br />
+              Bahnhofstraße 75<br />
+              71332 Waiblingen<br />
+              Deutschland
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Berufsbezeichnung und berufsrechtliche Angaben</h2>
+            <p class="mt-4">
+              Die Tätigkeit erfolgt als freiberufliches Coaching-Angebot. Es besteht keine gesetzliche Berufsordnung, Kammerzugehörigkeit oder berufsrechtliche Registrierung, sofern nicht ausdrücklich anders angegeben.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Verbraucherstreitbeilegung</h2>
+            <p class="mt-4">Ich bin nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Haftung für Inhalte</h2>
+            <p class="mt-4">
+              Als Diensteanbieter bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Gewähr für die Aktualität, Vollständigkeit und Richtigkeit der bereitgestellten Informationen.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Haftung für Links</h2>
+            <p class="mt-4">
+              Diese Website kann Links zu externen Websites Dritter enthalten, auf deren Inhalte ich keinen Einfluss habe. Für diese fremden Inhalte übernehme ich keine Gewähr. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-2xl font-semibold text-graphite">Urheberrecht</h2>
+            <p class="mt-4">
+              Die auf dieser Website erstellten Inhalte und Werke unterliegen dem deutschen Urheberrecht. Jede Verwertung außerhalb der Grenzen des Urheberrechts bedarf der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

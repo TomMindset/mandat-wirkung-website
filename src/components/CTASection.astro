@@ -1,0 +1,23 @@
+---
+import Button from "@components/Button.astro";
+import Container from "@components/Container.astro";
+
+interface Props {
+  title: string;
+  text: string;
+  href?: string;
+  label?: string;
+}
+
+const { title, text, href = "/kontakt", label = "Orientierungsgespräch anfragen" } = Astro.props;
+---
+
+<section class="bg-petrol py-16 text-white sm:py-20">
+  <Container class="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+    <div class="max-w-3xl">
+      <h2 class="text-balance text-3xl font-semibold leading-tight sm:text-4xl">{title}</h2>
+      <p class="mt-5 text-lg leading-8 text-white/76">{text}</p>
+    </div>
+    <Button href={href} class="border-white bg-white text-petrol hover:bg-paper hover:text-ink">{label}</Button>
+  </Container>
+</section>

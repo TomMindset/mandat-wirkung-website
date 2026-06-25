@@ -1,0 +1,36 @@
+---
+import { site } from "@data/site";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout
+  title="Kontakt | Mandat & Wirkung"
+  description="Vertrauliches Orientierungsgespräch bei Mandat & Wirkung anfragen. Kontakt für Führungsmandat Coaching mit Thomas Hoffmann."
+>
+  <main id="inhalt">
+    <section class="surface-grid bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Kontakt</p>
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Vertrauliches Orientierungsgespräch anfragen</h1>
+        <p class="mt-7 text-lg leading-8 text-slategraph">
+          Wenn Sie vor einer Führungsfrage stehen, die intern schwer zu sortieren ist, können Sie ein vertrauliches Orientierungsgespräch anfragen.
+        </p>
+        <p class="mt-5 text-lg leading-8 text-slategraph">
+          Bitte schreiben Sie kurz, worum es geht, welche Rolle Sie aktuell innehaben und welche Situation Sie klären möchten.
+        </p>
+        <div class="mt-10 border border-graphite/12 bg-white p-6 shadow-quiet">
+          <p class="text-sm font-semibold uppercase tracking-[0.16em] text-copper">Kontakt</p>
+          <a class="mt-4 inline-block text-xl font-semibold text-petrol hover:text-ink" href={`mailto:${site.email}`}>{site.email}</a>
+          <div class="mt-8">
+            <a class="inline-flex min-h-12 items-center border border-petrol bg-petrol px-5 py-3 text-sm font-semibold text-white hover:bg-ink" href={site.mailtoOrientation}>
+              Anfrage per E-Mail senden
+            </a>
+          </div>
+          <p class="mt-6 text-sm leading-7 text-slategraph">
+            Aktuell ist kein Kontaktformular angebunden. Die Kontaktaufnahme erfolgt daher bewusst per E-Mail.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

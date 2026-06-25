@@ -1,0 +1,15 @@
+---
+import LandingPageTemplate from "@components/LandingPageTemplate.astro";
+import { landingPages } from "@data/landingPages";
+
+export function getStaticPaths() {
+  return landingPages.map((page) => ({
+    params: { slug: page.slug },
+    props: page
+  }));
+}
+
+const page = Astro.props;
+---
+
+<LandingPageTemplate {...page} />

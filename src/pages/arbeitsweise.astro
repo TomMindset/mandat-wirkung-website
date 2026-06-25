@@ -1,0 +1,44 @@
+---
+import CardGrid from "@components/CardGrid.astro";
+import CTASection from "@components/CTASection.astro";
+import Layout from "@layouts/Layout.astro";
+
+const principles = [
+  { title: "Vertraulich", text: "Der Rahmen bleibt diskret und auf Ihre konkrete Situation bezogen." },
+  { title: "Präzise", text: "Wir arbeiten an Rolle, Mandat, Erwartungen, Kommunikation und Wirkung, nicht an allgemeinen Parolen." },
+  { title: "Auf Augenhöhe", text: "Das Coaching nimmt Organisation, Macht, Ambivalenzen und persönliche Verantwortung ernst." },
+  { title: "Situationsnah", text: "Ausgangspunkt sind reale Gespräche, Entscheidungen, Konflikte und Stakeholder-Dynamiken." }
+];
+---
+
+<Layout
+  title="Arbeitsweise | Mandat & Wirkung"
+  description="Die Arbeitsweise von Mandat & Wirkung: vertrauliches, präzises Coaching für konkrete Führungs- und Rollensituationen."
+>
+  <main id="inhalt">
+    <section class="bg-ink py-16 text-paper sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Arbeitsweise</p>
+        <h1 class="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Vertraulich. Präzise. Auf Augenhöhe.</h1>
+        <p class="mt-7 text-lg leading-8 text-paper/78">
+          Coaching bei Mandat & Wirkung ist ein strukturierter Reflexionsraum für konkrete Führungs- und Rollensituationen. Wir arbeiten mit Blick auf Organisation, Macht, Kommunikation und Wirkung.
+        </p>
+      </div>
+    </section>
+    <section class="bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-3xl font-semibold text-graphite">Prinzipien</h2>
+        <CardGrid items={principles} columns="four" />
+      </div>
+    </section>
+    <section class="surface-grid bg-linen py-16 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <h2 class="text-3xl font-semibold text-graphite">Format</h2>
+        <ul class="mt-8 grid gap-3 text-slategraph sm:grid-cols-2">
+          {["1:1 online oder vor Ort", "60 oder 90 Minuten", "vertraulicher Rahmen", "konkrete Anliegen statt Standardprogramm", "Pakete über 3, 6 oder 10 Sessions", "Akutsparring vor wichtigen Terminen"].map((item) => <li class="border border-graphite/12 bg-white px-5 py-4">{item}</li>)}
+        </ul>
+      </div>
+    </section>
+    <CTASection title="Suchen Sie einen nüchternen Raum für eine konkrete Führungsfrage?" text="Dann ist ein Orientierungsgespräch der passende erste Schritt." />
+  </main>
+</Layout>

@@ -1,0 +1,50 @@
+---
+import Button from "@components/Button.astro";
+import Container from "@components/Container.astro";
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  text: string;
+  primaryHref?: string;
+  primaryLabel?: string;
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  text,
+  primaryHref = "/kontakt",
+  primaryLabel = "Vertrauliches Orientierungsgespräch anfragen",
+  secondaryHref,
+  secondaryLabel
+} = Astro.props;
+---
+
+<section class="relative overflow-hidden bg-ink text-white">
+  <div class="absolute inset-0">
+    <img
+      src="/assets/hero-architecture.png"
+      alt="Abstrakter Architekturraum mit Licht, Schatten und klaren Linien"
+      class="h-full w-full object-cover"
+      width="1792"
+      height="1024"
+      loading="eager"
+      decoding="async"
+    />
+    <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/78 to-ink/18"></div>
+  </div>
+  <Container class="relative flex min-h-[calc(100svh-5rem)] items-center py-20 sm:py-24 lg:min-h-[720px]">
+    <div class="max-w-3xl">
+      {eyebrow && <p class="mb-6 text-sm font-semibold uppercase tracking-[0.16em] text-copper">{eyebrow}</p>}
+      <h1 class="text-balance text-4xl font-semibold leading-tight tracking-normal sm:text-5xl lg:text-6xl">{title}</h1>
+      <p class="mt-7 max-w-2xl text-pretty text-lg leading-8 text-white/78 sm:text-xl">{text}</p>
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+        <Button href={primaryHref}>{primaryLabel}</Button>
+        {secondaryHref && secondaryLabel && <Button href={secondaryHref} variant="secondary" class="border-white/70 text-white hover:border-white hover:bg-white hover:text-ink">{secondaryLabel}</Button>}
+      </div>
+    </div>
+  </Container>
+</section>

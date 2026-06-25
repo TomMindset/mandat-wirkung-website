@@ -1,0 +1,29 @@
+---
+import Container from "@components/Container.astro";
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  text?: string;
+  tone?: "light" | "dark" | "grid";
+  narrow?: boolean;
+}
+
+const { eyebrow, title, text, tone = "light", narrow = false } = Astro.props;
+const tones = {
+  light: "bg-paper text-graphite",
+  dark: "bg-ink text-paper",
+  grid: "surface-grid bg-linen text-graphite"
+};
+---
+
+<section class:list={["py-16 sm:py-24", tones[tone]]}>
+  <Container narrow={narrow}>
+    <div class="max-w-3xl">
+      {eyebrow && <p class="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-copper">{eyebrow}</p>}
+      <h2 class="text-balance text-3xl font-semibold leading-tight sm:text-4xl">{title}</h2>
+      {text && <p class="mt-6 text-pretty text-lg leading-8 opacity-80">{text}</p>}
+    </div>
+    <slot />
+  </Container>
+</section>

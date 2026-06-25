@@ -1,0 +1,40 @@
+---
+import Button from "@components/Button.astro";
+import ContentSection from "@components/ContentSection.astro";
+import CTASection from "@components/CTASection.astro";
+import OfferCard from "@components/OfferCard.astro";
+import Layout from "@layouts/Layout.astro";
+import { offers } from "@data/offers";
+---
+
+<Layout
+  title="Coaching | Mandat & Wirkung"
+  description="Vertrauliches Führungsmandat Coaching für Rollenklärung, Stakeholder-Wirkung, laterale Führung und souveräne Entscheidungen."
+>
+  <main id="inhalt">
+    <section class="surface-grid bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Coaching</p>
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Führungsmandat Coaching für konkrete Situationen</h1>
+        <p class="mt-7 text-lg leading-8 text-slategraph">
+          Mandat & Wirkung ist Coaching, keine Beratung. Wir klären Rolle, Mandat, Kommunikation und Wirkung in realen Führungs- und Veränderungssituationen.
+        </p>
+        <Button href="/kontakt" class="mt-9">Vertrauliches Orientierungsgespräch anfragen</Button>
+      </div>
+    </section>
+    <section class="bg-paper py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-5 sm:px-8">
+        <h2 class="text-3xl font-semibold text-graphite">Angebote</h2>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {offers.map((offer) => <OfferCard {...offer} />)}
+        </div>
+      </div>
+    </section>
+    <ContentSection
+      title="Kein Standardprogramm"
+      text="Jede Session arbeitet an einer konkreten Führungsfrage. Das kann eine Rollenklärung sein, ein Gespräch mit der Geschäftsführung, ein Stakeholder-Konflikt oder die Vorbereitung einer Entscheidung."
+      tone="grid"
+    />
+    <CTASection title="Klären wir, welcher Rahmen passt." text="Im ersten Gespräch geht es um Anliegen, Diskretion, Passung und den nächsten sinnvollen Schritt." />
+  </main>
+</Layout>
