@@ -9,7 +9,7 @@ import { offers } from "@data/offers";
 const outcomes = [
   "Klarheit über Rolle, Mandat und Entscheidungsspielraum",
   "präzisere Sprache für schwierige Führungs- und Stakeholder-Situationen",
-  "bessere Vorbereitung auf kritische Gespräche, Gremien oder Entscheidungsvorlagen",
+  "Vorbereitung auf kritische Gespräche oder Gremien",
   "mehr Bewusstsein für Wirkung, Timing und Anschlussfähigkeit",
   "konkrete nächste Schritte statt abstrakter Reflexion"
 ];
@@ -23,38 +23,42 @@ const outcomes = [
     <section class="surface-grid bg-paper py-16 sm:py-24">
       <div class="mx-auto max-w-4xl px-5 sm:px-8">
         <p class="mb-5 text-sm font-semibold uppercase tracking-[0.16em] text-copper">Coaching & Sparring</p>
-        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Führungsmandat Coaching für konkrete Situationen</h1>
+        <h1 class="text-balance text-4xl font-semibold leading-tight text-graphite sm:text-5xl">Coaching für Mandat und Wirkung</h1>
         <p class="mt-7 text-lg leading-8 text-slategraph">
-          Mandat & Wirkung ist Coaching, keine Beratung. Wir klären Rolle, Mandat, Kommunikation und Wirkung in realen Führungs- und Veränderungssituationen.
+          Mandat & Wirkung klärt Rolle, Auftrag, Kommunikation und Entscheidungssicherheit in realen Führungs- und Veränderungssituationen.
         </p>
         <Button href="/kontakt" class="mt-9">Vertrauliches Orientierungsgespräch anfragen</Button>
       </div>
     </section>
+
     <section class="bg-paper py-16 sm:py-24">
       <div class="mx-auto max-w-7xl px-5 sm:px-8">
         <h2 class="text-3xl font-semibold text-graphite">Angebote</h2>
         <p class="mt-5 max-w-3xl text-lg leading-8 text-slategraph">
-          Die Formate unterscheiden sich im Umfang, bleiben aber immer auf die konkrete Führungsfrage, den aktuellen Entscheidungsspielraum und den nächsten wirksamen Schritt ausgerichtet.
+          Die Formate geben Orientierung, bleiben aber am konkreten Anliegen ausgerichtet.
         </p>
         <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {offers.map((offer) => <OfferCard {...offer} />)}
         </div>
       </div>
     </section>
+
     <ContentSection
       title="Was im Sparring entsteht"
-      text="Das Ergebnis ist keine abstrakte Reflexion, sondern mehr Klarheit für konkrete Rollen-, Gesprächs- und Entscheidungssituationen."
+      text="Mehr Klarheit für konkrete Rollen-, Gesprächs- und Entscheidungssituationen."
       tone="grid"
     >
       <div class="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {outcomes.map((outcome) => <p class="border border-graphite/12 bg-white px-5 py-4 text-sm font-semibold leading-7 text-slategraph shadow-quiet">{outcome}</p>)}
+        {outcomes.map((outcome) => <p class="border border-mist/60 bg-white px-5 py-4 text-sm font-semibold leading-7 text-slategraph shadow-quiet">{outcome}</p>)}
       </div>
     </ContentSection>
+
     <ContentSection
       title="Kein Standardprogramm"
-      text="Jede Session arbeitet an einer konkreten Führungsfrage. Das kann eine Rollenklärung sein, ein Gespräch mit der Geschäftsführung, ein Stakeholder-Konflikt oder die Vorbereitung einer Entscheidung. Entscheidend ist, was für Ihre Rolle jetzt anschlussfähig und wirksam ist."
+      text="Jede Session beginnt bei einer konkreten Führungsfrage: Rolle, Gespräch, Konflikt, Stakeholder oder Entscheidung."
       tone="grid"
     />
-    <CTASection title="Klären wir, welcher Rahmen passt." text="Im ersten Gespräch geht es um Anliegen, Diskretion, Passung und den nächsten sinnvollen Schritt." />
+
+    <CTASection title="Klären wir, welcher Rahmen passt." text="Im ersten Gespräch geht es um Anliegen, Diskretion und den nächsten sinnvollen Schritt." />
   </main>
 </Layout>

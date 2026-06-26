@@ -7,11 +7,11 @@ export const landingPages = [
     h1: "Führungskräfte Coaching für klare Rolle und wirksames Mandat",
     focus: "Führungskräfte Coaching, Leadership Coaching, Coaching für Führungskräfte",
     intro:
-      "Führung wird anspruchsvoll, wenn Erwartungen steigen, Zuständigkeiten offen bleiben und Entscheidungen politischer werden. Mandat & Wirkung bietet vertrauliches Coaching für Führungskräfte, die ihre Rolle klären und souveräner handeln wollen.",
+      "Führung wird anspruchsvoll, wenn Erwartungen steigen und Zuständigkeiten offen bleiben. Mandat & Wirkung bietet vertrauliches Coaching für mehr Klarheit in Rolle, Mandat und Wirkung.",
     sections: [
       {
         title: "Wenn Führung mehr Kontext braucht",
-        text: "Im Coaching sortieren wir konkrete Situationen: Erwartungen von oben, Signale aus dem Team, laterale Abhängigkeiten und die eigene Position. Ziel ist keine allgemeine Methodik, sondern mehr Klarheit für Entscheidungen, Gespräche und Wirkung."
+        text: "Wir sortieren Erwartungen von oben, Signale aus dem Team, laterale Abhängigkeiten und die eigene Position. Ziel ist Klarheit für Entscheidungen, Gespräche und Wirkung."
       },
       {
         title: "Typische Themen",
@@ -33,11 +33,11 @@ export const landingPages = [
     h1: "Laterale Führung Coaching für Wirkung ohne formale Macht",
     focus: "laterale Führung Coaching, führen ohne formale Macht, führen ohne Weisungsbefugnis",
     intro:
-      "Laterale Führung verlangt Klarheit über Auftrag, Interessen, Abhängigkeiten und Kommunikation. Im Coaching arbeiten wir daran, Verantwortung sichtbar zu übernehmen, ohne die eigene Rolle zu überdehnen.",
+      "Laterale Führung verlangt Klarheit über Auftrag, Interessen und Abhängigkeiten. Im Coaching geht es um Wirkung ohne Rollenüberdehnung.",
     sections: [
       {
         title: "Verantwortung ohne Durchgriff",
-        text: "Wenn Teams, Fachbereiche und Management unterschiedliche Erwartungen haben, reicht Fachlichkeit allein nicht. Wir reflektieren Stakeholder, Entscheidungswege und Interventionen, damit Führung ohne Weisungsmacht tragfähiger wird."
+        text: "Wenn Teams, Fachbereiche und Management unterschiedliche Erwartungen haben, reicht Fachlichkeit allein nicht. Wir klären Stakeholder, Entscheidungswege und Interventionen."
       },
       {
         title: "Mögliche Arbeitspunkte",
@@ -59,11 +59,11 @@ export const landingPages = [
     h1: "Rollenklärung für Führungskräfte mit unklarem Mandat",
     focus: "Rollenklärung Führungskraft, Führungsrolle klären, neues Führungsmandat",
     intro:
-      "Neue oder veränderte Führungsrollen sind selten vollständig geklärt. Erwartungen, Entscheidungsrechte und Rückendeckung müssen oft erst präzise gemacht werden.",
+      "Neue oder veränderte Führungsrollen sind selten vollständig geklärt. Erwartungen, Entscheidungsrechte und Rückendeckung müssen oft erst präzise werden.",
     sections: [
       {
         title: "Die Rolle vor der Wirkung klären",
-        text: "Rollenklärung schafft Orientierung, bevor die nächsten Termine, Entscheidungen oder Konflikte anstehen. Wir arbeiten an Auftrag, Grenzen, Stakeholdern, Kommunikationslinien und den nächsten konkreten Schritten."
+        text: "Rollenklärung schafft Orientierung vor Terminen, Entscheidungen und Konflikten. Wir arbeiten an Auftrag, Grenzen, Stakeholdern und den nächsten Schritten."
       },
       {
         title: "Geeignet bei",
@@ -85,11 +85,11 @@ export const landingPages = [
     h1: "Coaching für Führungskräfte in Transformation",
     focus: "Coaching Transformation Führungskraft, Führung in Veränderung, Leadership Coaching Transformation",
     intro:
-      "Transformation erhöht Sichtbarkeit und Druck. Führungskräfte müssen Veränderung ermöglichen, Widerstand verstehen und Erwartungen verbinden, oft ohne vollständige Kontrolle über das System.",
+      "Transformation erhöht Sichtbarkeit und Druck. Führungskräfte müssen Erwartungen verbinden, ohne das System vollständig kontrollieren zu können.",
     sections: [
       {
         title: "Führen im Zwischenraum",
-        text: "Im Coaching sortieren wir die konkrete Veränderungssituation: Was ist Ihr Auftrag, welche Interessen wirken, wo braucht es Klärung und welche Kommunikation stärkt Ihre Handlungsfähigkeit?"
+        text: "Wir sortieren Auftrag, Interessen, Klärungsbedarf und Kommunikation. Ziel ist mehr Handlungsfähigkeit in der konkreten Veränderungssituation."
       },
       {
         title: "Fokus im Coaching",
@@ -111,11 +111,11 @@ export const landingPages = [
     h1: "Coaching für Führung in digitaler Transformation",
     focus: "digitale Transformation Führung, Coaching digitale Transformation, Führungskraft Digitalisierung",
     intro:
-      "Digitale Transformation bringt Fachlogik, IT, Management, Datenfragen und operative Realität zusammen. Führung wird dann besonders wirksam, wenn Rolle und Kommunikation klar sind.",
+      "Digitale Transformation verbindet Fachlogik, IT, Management und operative Realität. Wirksam wird Führung, wenn Rolle und Kommunikation klar sind.",
     sections: [
       {
         title: "Nicht Technologie beraten, sondern Führung klären",
-        text: "Mandat & Wirkung entwickelt keine Digitalstrategie. Das Coaching hilft Ihnen, Ihre Führungsrolle in digitalen Veränderungssituationen zu sortieren und Gespräche so vorzubereiten, dass Orientierung entsteht."
+        text: "Mandat & Wirkung entwickelt keine Digitalstrategie. Das Coaching klärt die Führungsrolle in digitalen Veränderungssituationen."
       },
       {
         title: "Typische Spannungen",
@@ -141,7 +141,7 @@ export const landingPages = [
     sections: [
       {
         title: "Führungsrolle im KI-Kontext klären",
-        text: "Das Coaching ist keine KI-Beratung. Wir arbeiten an Rolle, Mandat, Stakeholder-Wirkung und Kommunikation, damit Sie in KI-nahen Veränderungssituationen klarer führen können."
+        text: "Das Coaching ist keine KI-Beratung. Wir arbeiten an Rolle, Mandat, Stakeholder-Wirkung und Kommunikation."
       },
       {
         title: "Mögliche Anliegen",

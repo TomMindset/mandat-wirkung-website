@@ -3,33 +3,30 @@ import { legalNavigation } from "@data/navigation";
 import { site } from "@data/site";
 ---
 
-<footer class="bg-ink text-paper">
+<footer class="border-t border-mist/55 bg-paper text-graphite">
   <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.35fr_1fr_1fr]">
     <div>
-      <p class="text-lg font-semibold">{site.name}</p>
-      <p class="mt-2 text-sm text-paper/84">{site.owner}</p>
-      <p class="mt-3 max-w-xl text-sm text-paper/74">{site.claim}</p>
-      <p class="mt-6 max-w-xl text-sm text-paper/68">
-        Vertrauliches Coaching für Führungskräfte und Schlüsselpersonen, die Veränderung verantworten und ihr Mandat klären wollen.
-      </p>
+      <img src="/assets/logo-mandat-wirkung.png" alt={site.name} class="h-16 w-auto" width="900" height="297" loading="lazy" decoding="async" />
+      <p class="mt-5 text-sm text-slategraph">{site.owner}</p>
+      <p class="mt-3 max-w-xl text-sm text-slategraph">Vertrauliches Coaching für Führungskräfte und Schlüsselpersonen, die Mandat, Rolle und Wirkung klären wollen.</p>
     </div>
     <div>
-      <p class="text-sm font-semibold text-white">Kontakt</p>
-      <a class="mt-4 inline-block text-sm text-paper/72 hover:text-white" href={`mailto:${site.email}`}>{site.email}</a>
+      <p class="text-sm font-semibold text-graphite">Kontakt</p>
+      <a class="mt-4 inline-block text-sm text-slategraph hover:text-copper" href={`mailto:${site.email}`}>{site.email}</a>
     </div>
     <nav aria-label="Rechtliches">
-      <p class="text-sm font-semibold text-white">Rechtliches</p>
-      <ul class="mt-4 space-y-2 text-sm text-paper/72">
-        <li><a class="hover:text-white" href="/kontakt">Kontakt</a></li>
-        {legalNavigation.map((item) => <li><a class="hover:text-white" href={item.href}>{item.label}</a></li>)}
+      <p class="text-sm font-semibold text-graphite">Rechtliches</p>
+      <ul class="mt-4 space-y-2 text-sm text-slategraph">
+        <li><a class="hover:text-copper" href="/kontakt">Kontakt</a></li>
+        {legalNavigation.map((item) => <li><a class="hover:text-copper" href={item.href}>{item.label}</a></li>)}
       </ul>
     </nav>
   </div>
-  <div class="border-t border-white/10">
-    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-sm text-paper/62 sm:flex-row sm:items-center sm:justify-between sm:px-8">
+  <div class="border-t border-mist/55">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-sm text-slategraph sm:flex-row sm:items-center sm:justify-between sm:px-8">
       <p>© {new Date().getFullYear()} {site.name}</p>
       <nav class="flex gap-5" aria-label="Rechtliches">
-        {legalNavigation.map((item) => <a class="hover:text-white" href={item.href}>{item.label}</a>)}
+        {legalNavigation.map((item) => <a class="hover:text-copper" href={item.href}>{item.label}</a>)}
       </nav>
     </div>
   </div>

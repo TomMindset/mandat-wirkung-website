@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        paper: "#f7f4ef",
-        linen: "#ede7dd",
-        graphite: "#181c1f",
-        slategraph: "#273038",
-        petrol: "#08393f",
-        ink: "#071417",
-        copper: "#a66f45",
-        mist: "#d8d1c7"
+        paper: "#fdfaf4",
+        linen: "#f4efe5",
+        graphite: "#06284a",
+        slategraph: "#2b3948",
+        petrol: "#0b355c",
+        ink: "#021b33",
+        copper: "#a1843d",
+        mist: "#d8c9a4"
       },
       fontFamily: {
         sans: [
@@ -26,7 +26,7 @@ export default {
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"]
       },
       boxShadow: {
-        quiet: "0 24px 80px rgba(7, 20, 23, 0.08)"
+        quiet: "0 24px 80px rgba(2, 27, 51, 0.08)"
       }
     }
   }

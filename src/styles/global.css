@@ -4,7 +4,7 @@
 
 :root {
   color-scheme: light;
-  --focus: #a66f45;
+  --focus: #a1843d;
 }
 
 * {
@@ -17,8 +17,8 @@ html {
 
 body {
   margin: 0;
-  background: #f7f4ef;
-  color: #181c1f;
+  background: #fdfaf4;
+  color: #06284a;
   font-family:
     Inter,
     ui-sans-serif,
@@ -41,14 +41,14 @@ a {
 }
 
 ::selection {
-  background: #a66f45;
+  background: #a1843d;
   color: #fffaf2;
 }
 
 .surface-grid {
   background-image:
-    linear-gradient(rgba(8, 57, 63, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(8, 57, 63, 0.055) 1px, transparent 1px);
+    linear-gradient(rgba(6, 40, 74, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 40, 74, 0.05) 1px, transparent 1px);
   background-size: 44px 44px;
 }
 

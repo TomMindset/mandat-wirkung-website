@@ -3,16 +3,23 @@ import { primaryNavigation } from "@data/navigation";
 import { site } from "@data/site";
 ---
 
-<header class="sticky top-0 z-40 border-b border-graphite/10 bg-paper/92 backdrop-blur">
+<header class="sticky top-0 z-40 border-b border-mist/45 bg-paper/94 backdrop-blur">
   <div class="mx-auto flex min-h-20 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
-    <a href="/" class="group flex flex-col leading-tight" aria-label="Startseite Mandat & Wirkung">
-      <span class="text-lg font-semibold tracking-normal text-graphite">{site.name}</span>
-      <span class="hidden text-xs text-slategraph sm:block">{site.claim}</span>
+    <a href="/" class="group flex items-center" aria-label="Startseite Mandat & Wirkung">
+      <img
+        src="/assets/logo-mandat-wirkung.png"
+        alt={site.name}
+        class="h-12 w-auto sm:h-14"
+        width="900"
+        height="297"
+        loading="eager"
+        decoding="async"
+      />
     </a>
     <nav class="hidden items-center gap-7 md:flex" aria-label="Hauptnavigation">
       {
         primaryNavigation.map((item) => (
-          <a class="text-sm font-medium text-slategraph transition-colors hover:text-petrol" href={item.href}>
+          <a class="text-sm font-medium text-slategraph transition-colors hover:text-copper" href={item.href}>
             {item.label}
           </a>
         ))
@@ -20,15 +27,15 @@ import { site } from "@data/site";
     </nav>
     <a
       href="/kontakt"
-      class="hidden min-h-11 items-center border border-petrol px-4 py-2 text-sm font-semibold text-petrol transition-colors hover:bg-petrol hover:text-white sm:inline-flex"
+      class="hidden min-h-11 items-center border border-copper px-4 py-2 text-sm font-semibold text-graphite transition-colors hover:bg-copper hover:text-white sm:inline-flex"
     >
       Orientierungsgespräch
     </a>
   </div>
-  <nav class="flex gap-5 overflow-x-auto border-t border-graphite/10 px-5 py-3 text-sm md:hidden" aria-label="Mobile Navigation">
+  <nav class="flex gap-5 overflow-x-auto border-t border-mist/45 px-5 py-3 text-sm md:hidden" aria-label="Mobile Navigation">
     {
       primaryNavigation.map((item) => (
-        <a class="shrink-0 text-slategraph hover:text-petrol" href={item.href}>
+        <a class="shrink-0 text-slategraph hover:text-copper" href={item.href}>
           {item.label}
         </a>
       ))
