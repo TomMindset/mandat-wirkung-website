@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# build output
+dist/
+.astro/
+
+# local review and agent state
+.review/
+.agents/
+.upload-package/
+mandat-wirkung-github-*/
+AGENTS.md
+*.zip
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
