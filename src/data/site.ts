@@ -4,10 +4,10 @@ export const site = {
   owner: "Thomas Hoffmann",
   email: "anfrage@mandat-wirkung.de",
   mailtoOrientation:
-    "mailto:anfrage@mandat-wirkung.de?subject=Anfrage%20Orientierungsgespr%C3%A4ch%20Mandat%20%26%20Wirkung",
+    "mailto:anfrage@mandat-wirkung.de?subject=Anfrage%20Mandat%20%26%20Wirkung",
   url: "https://www.mandat-wirkung.de",
-  defaultTitle: "Mandat & Wirkung | Führungsmandat Coaching für Führungskräfte",
+  defaultTitle: "Mandat & Wirkung | Diskretes Führungscoaching für klare Rolle, Mandat und Wirkung",
   defaultDescription:
-    "Vertrauliches Führungsmandat Coaching für Führungskräfte in Transformation: Rollenklärung, laterale Führung, Stakeholder-Wirkung und souveräne Entscheidungen.",
+    "Vertrauliches Coaching und Sparring für Führungskräfte, Schlüsselpersonen und Transformationsverantwortliche in komplexen Rollen.",
   ogImage: "/assets/hero-architecture.png"
 };
