@@ -3,6 +3,7 @@ export const site = {
   claim: "Führungsmandat Coaching",
   owner: "Thomas Hoffmann",
   email: "anfrage@mandat-wirkung.de",
+  bookingUrl: "https://my.meetergo.com/thomashoffmann",
   mailtoOrientation:
     "mailto:anfrage@mandat-wirkung.de?subject=Anfrage%20Mandat%20%26%20Wirkung",
   url: "https://www.mandat-wirkung.de",

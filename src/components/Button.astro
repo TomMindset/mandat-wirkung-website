@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { href, variant = "primary", class: className = "" } = Astro.props;
+const isExternal = /^https?:\/\//.test(href);
 const styles = {
   primary: "bg-petrol text-white hover:bg-ink border-petrol",
   secondary: "bg-transparent text-graphite hover:bg-copper hover:text-white border-copper",
@@ -15,6 +16,8 @@ const styles = {
 
 <a
   href={href}
+  target={isExternal ? "_blank" : undefined}
+  rel={isExternal ? "noopener noreferrer" : undefined}
   class:list={[
     "inline-flex min-h-12 items-center justify-center border px-5 py-3 text-sm font-semibold transition-colors",
     "focus-visible:outline focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-copper",
