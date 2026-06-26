@@ -18,6 +18,25 @@ const statements = [
   { title: "Kritische Sichtbarkeit", text: "Sie brauchen Klarheit, bevor Sie in kritischen Terminen sichtbar werden." }
 ];
 
+const typicalSituations = [
+  {
+    title: "Digitales, Daten- oder KI-Vorhaben",
+    text: "Sie verantworten ein digitales, daten- oder KI-nahes Vorhaben, aber Mandat, Budget oder Entscheidungskompetenz sind nicht vollständig geklärt."
+  },
+  {
+    title: "Zwischen vielen Stakeholdern",
+    text: "Sie sollen Veränderung treiben, bewegen sich aber zwischen Geschäftsführung, Fachbereichen, IT, Redaktion, Vertrieb oder externen Partnern."
+  },
+  {
+    title: "Fachlich richtig, politisch anspruchsvoll",
+    text: "Sie haben fachlich gute Argumente, merken aber, dass Wirkung, Timing, Sprache und politische Anschlussfähigkeit entscheidend werden."
+  },
+  {
+    title: "Vor kritischen Entscheidungen",
+    text: "Sie stehen vor einem kritischen Gespräch, einer Entscheidungsvorlage oder einer Führungsfrage, bei der Klarheit wichtiger ist als Geschwindigkeit."
+  }
+];
+
 const audiences = [
   { title: "Neue Führungsrolle", text: "Vom Experten zur Führungskraft. Mehr Sichtbarkeit, mehr Erwartung, weniger Eindeutigkeit." },
   { title: "Laterale Führung", text: "Verantwortung übernehmen, ohne formale Macht zu haben." },
@@ -63,6 +82,14 @@ const formats = [
       text="Viele Führungskräfte sollen Veränderung voranbringen, ohne dass Rolle, Macht, Erwartungen und Rückendeckung wirklich geklärt sind. Sie bewegen sich zwischen Geschäftsführung, Fachbereichen, Teams, IT, Daten, Digitalisierung und politischen Dynamiken. Genau dort entsteht der Bedarf nach vertraulichem Sparring."
     >
       <CardGrid items={statements} columns="three" />
+    </ContentSection>
+
+    <ContentSection
+      title="Typische Situationen"
+      text="Mandat & Wirkung setzt dort an, wo Verantwortung bereits spürbar ist, aber Rolle, Rückendeckung oder Einfluss noch nicht eindeutig geklärt sind."
+      tone="grid"
+    >
+      <CardGrid items={typicalSituations} columns="four" />
     </ContentSection>
 
     <ContentSection title="Für Menschen mit Veränderungsmandat" tone="grid">
