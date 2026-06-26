@@ -1,11 +1,19 @@
 ---
 import { site } from "@data/site";
 import Layout from "@layouts/Layout.astro";
+
+const firstMessageHints = [
+  "Ihre aktuelle Rolle oder Verantwortung",
+  "die Situation, die Sie klären möchten",
+  "ob es um ein akutes Thema oder ein längeres Sparring geht",
+  "ein grober zeitlicher Rahmen",
+  "besondere Anforderungen an Vertraulichkeit"
+];
 ---
 
 <Layout
   title="Kontakt | Mandat & Wirkung"
-  description="Vertrauliches Orientierungsgespräch bei Mandat & Wirkung anfragen. Kontakt für Führungsmandat Coaching mit Thomas Hoffmann."
+  description="Vertrauliche Kontaktaufnahme für Führungscoaching, Mandatsklärung und Transformations-Sparring."
 >
   <main id="inhalt">
     <section class="surface-grid bg-paper py-16 sm:py-24">
@@ -16,19 +24,28 @@ import Layout from "@layouts/Layout.astro";
           Wenn Sie vor einer Führungsfrage stehen, die intern schwer zu sortieren ist, können Sie ein vertrauliches Orientierungsgespräch anfragen.
         </p>
         <p class="mt-5 text-lg leading-8 text-slategraph">
-          Bitte schreiben Sie kurz, worum es geht, welche Rolle Sie aktuell innehaben und welche Situation Sie klären möchten.
+          Für eine erste Einschätzung genügen wenige Sätze. Entscheidend ist nicht die perfekte Beschreibung, sondern ein klares Anliegen und ein vertraulicher Rahmen.
         </p>
         <div class="mt-10 border border-graphite/12 bg-white p-6 shadow-quiet">
           <p class="text-sm font-semibold uppercase tracking-[0.16em] text-copper">Kontakt</p>
           <a class="mt-4 inline-block text-xl font-semibold text-petrol hover:text-ink" href={`mailto:${site.email}`}>{site.email}</a>
           <div class="mt-8">
             <a class="inline-flex min-h-12 items-center border border-petrol bg-petrol px-5 py-3 text-sm font-semibold text-white hover:bg-ink" href={site.mailtoOrientation}>
-              Anfrage per E-Mail senden
+              Vertrauliche Anfrage senden
             </a>
           </div>
           <p class="mt-6 text-sm leading-7 text-slategraph">
             Aktuell ist kein Kontaktformular angebunden. Die Kontaktaufnahme erfolgt daher bewusst per E-Mail.
           </p>
+        </div>
+      </div>
+    </section>
+    <section class="bg-paper py-16 sm:py-20">
+      <div class="mx-auto max-w-4xl px-5 sm:px-8">
+        <h2 class="text-3xl font-semibold text-graphite">Hilfreich für die erste Nachricht</h2>
+        <p class="mt-6 text-lg leading-8 text-slategraph">Für eine erste Einschätzung genügen wenige Sätze. Hilfreich sind:</p>
+        <div class="mt-8 grid gap-3 sm:grid-cols-2">
+          {firstMessageHints.map((hint) => <p class="border border-graphite/12 bg-white px-5 py-4 text-sm font-semibold leading-7 text-slategraph shadow-quiet">{hint}</p>)}
         </div>
       </div>
     </section>
